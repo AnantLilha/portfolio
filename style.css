@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    background-color: #3F8EF4;
+    margin-top: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+/* Section Titles */
+.aboutme, .myskills, .myproject {
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+/* Info text */
+.info{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+/* ---- Skills ---- */
+.skills-box{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill{
+    background-color: white;
+    height: 35px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid black;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Skill colors */
+.html{ background-color: #FF8C42; }
+.css{ background-color: #4A90E2; }
+.python{ background-color: #6C5CE7; }
+
+.skill:hover{
+    transform: scale(1.15);
+}
+
+/* ---- Projects ---- */
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.p{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.p:hover{
+    transform: scale(1.15);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ---- Footer ---- */
+.footer{
+    background-color: #1A1A1A;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px){
+
+    .header{
+        font-size: 22px;
+        height: 50px;
+    }
+
+    .skills-box, .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill, .p{
+        width: 60%;
+        margin: auto;
+    }
+
+    .footer{
+        font-size: 13px;
+    }
+}
+
+    
